@@ -1,5 +1,5 @@
 import re
-"""""
+""""
 texto = "Estamos aprendiendo a usar expresiones regulares"
 
 patron = "usar"
@@ -21,17 +21,18 @@ resultado = re.findall("^Estamos", texto)
 
 print(resultado)
 
-"""
+
 #que hace match solo da si esta en el principio
 
 import re
 texto = "amet lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet et amet."
 patron = "amet"
-#print(re.search(patron, texto).group())
-#print(re.match(patron, texto))
-#Expresiones regualres de python
-# lorem = r "[a - z]{5}"
-# r significa que es una expresion regular
+ print(re.search(patron, texto).group())
+ print(re.match(patron, texto))
+ Expresiones regualres de python
+ lorem = r "[a - z]{5}"
+ r significa que es una expresion regular
+
 #ejercicio de parcial bajar texto y bucar cosas con expresiones regulares. ej saber si el telefono es de capital  cordonba o el mail. 
 
 #print(re.search(r"[a-z]{5}", texto).group())
@@ -47,3 +48,4 @@ try:
     print(re.search(patron, texto).group())
 except:
     print("ya termino la clase")
+""""
