@@ -34,7 +34,7 @@ if numero == 1:
 elif numero == 2:
     print("5")
 elif numero == 3:
-    print(4)
+    print("4")
 elif numero == 4:
     print("3")
 elif numero == 5:
