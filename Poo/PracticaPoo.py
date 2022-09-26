@@ -60,3 +60,52 @@ notebook1 = Notebook ("asus", "RRust", 25000)
 notebook1.descuento(50)
 print (notebook1.precioActual())    # si no tiene argumentos le pongo parentesis si o si
 
+#Ej. 4:
+class Contador:
+    def __init__(self, valor):
+        self.valor = valor
+    
+    def inc(self):
+        self.valor += 1
+    
+    def reset(self):
+        self.valor = 0
+    
+    def valorActual(self):
+        print(self.valor)
+    
+    def valorNuevo(self, nuevoValor):
+        self.valor = nuevoValor 
+
+# EJ.5  --> Modificá el ejercicio anterior de manera que sea capaz de recordar cual fue el último comando
+#  que se le dió, en forma de mensaje. Estos mensajes pueden ser: "reset", "incremento", "disminución" o 
+# "actualización" (para cuando se coloca un valor nuevo). 
+# El método para saber el último comando es ultimoComando, y el resultado de aplicarlo a la serie de 
+# comandos dicha en el ejercicio anterior debería ser "disminución".
+#copiar
+
+# tenes que tener la misma cantidad de getters para la cantidad de atributos
+#getter metodo que devuelve el valor de un metodo en atributo en particular (creo que es el print final)
+# 1 atributo 1 setter
+# =! para los setters es un metodo que modifica o asigna un valor a ese atributo
+
+# EJ. 7 --> Definí una clase de gorriones, de los cuales nos interesa conocer dos medidas conocidas 
+# como CSS (coeficiente de serenidad silenciosa), CSSP y CSSV (como el CSS pero “pico” y “veces”). 
+# El CSS resulta de dividir la cantidad total de kilómetros que vuela desde que se lo comienza a estudiar,
+#  por la cantidad total de gramos de comida que ingiere. El CSSP es la misma división pero considerando 
+# solamente lo que voló la vez que más voló y lo que comió la vez que más comió. El CSSV es otra vez 
+# la misma idea, respecto de la cantidad de veces que voló y comió. Si un gorrión nunca comió, 
+# los coeficientes deben ser None(ya que no se puede dividir en cero). 
+# Un gorrión se considera en equilibrio si su CSS está entre 0.5 y 2.
+
+# ¿Comparten interfaz o o? si pero parte de la interfaz, el perro tiene interfaz pasear pero el gato no.
+# ¿Son polimorficas? necesitas una tercera para saberlo, le puede mandar mensajes tanto a uno como a otro porque
+# comparten parte de la interfaz. Somo me importa si puedo mandar el mensaje, despues si el mensaje esta bien 
+# ejecutado no me importa porque no lo veo.
+#ejercicio perro
+
+# PARCIAL TITANES
+# salud siempre esta
+# segundo el getter
+# los metodos
+# cuando hablo de proporcional, caunque sea con comma
