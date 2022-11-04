@@ -1,4 +1,6 @@
 # GUIA 4: EXPRESIONES REGULARES
+
+.* significa "Cualquier cosa"
 import re
 # Ej 1: verifique si un string tiene al menos un carácter permitido, estos son a-z, A-Z y 0-9.
 

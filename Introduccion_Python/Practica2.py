@@ -90,17 +90,26 @@ else:
 
 
 # LISTAS
-# Ej. 6: Creá una lista e inicializala con 5 cadenas de caracteres leídas por teclado. 
+# Ej. 6: lista e inicializala con 5 cadenas de caracteres leídas por teclado. 
 # Copiá los elementos de la lista en otra lista pero en orden inverso, imprimí los elementos de esta última lista.
 # Recordá que la manera de copiar una lista en otra es: lista2 = list(lista1)
 
-lista = input(" 5 caracteres: ")
-lista2 = lista[::-1]
-print(lista2)
+lista1 = []
+for indice in range(5):
+    lista1.append(input("cadena para lista 1: "))
+lista1.reverse()
+
+print(lista1)
+
 
 #Ej. 7: Creá un programa que declare una lista y la vaya llenando de números leídos por teclado hasta que se introduzca un número negativo. 
 # Una vez hecho esto se deben imprimir los elementos de la lista
-#PREGUNTAR
+
+lista1 = []
+while int(input("ingrese numero : ")) >= 0:
+    lista1.append()
+else:
+    print(lista1)
 
 #Ej. 8: Realizá un programa que declare tres listas lista1, lista2 y lista3, donde las dos primeras listas deben tener cinco enteros cada una, ingresados por teclado y asigne para cada elemento de la lista3 la suma de los elementos de la lista1 y la lista2 
 # (es decir, el primer elemento de la lista3 tiene que ser la suma del primer elemento de la lista1 y el primero de la lista2)
@@ -124,10 +133,82 @@ for indice in range(5):
     lista3.append(lista1[indice] + lista2 [indice])
 print(lista3)
 
-# Ej. 9: Hacé un programa que guarde los nombres y la edades de los alumnos de un curso. Se debe introducir el nombre y la edad 
-# de cada alumno por teclado. El proceso de lectura de datos terminará cuando se introduzca como nombre un asterisco (*). 
-# Al finalizar se deben mostrar los siguientes datos:
-# La edad máxima de todos los alumnos.
-# Los alumnos que tengan la edad máxima
+# Ej. 9:guarde los nombres y la edades de los alumnos, Se debe introducir el nombre y la edad 
+# por teclado. El proceso terminará cuando se introduzca como nombre un asterisco (*). 
+# Al finalizar se deben mostrar: La edad máxima de todos y Los alumnos con edad máxima
 
+nombre_edad = []
+while True:
+    nombre = input("nombre y apellido alumno: ")
+    edad = input("Edad: ")
+    if nombre != "*":
+        nombre_edad[nombre] = edad
+    else:
+        break
+edad_maxima = 0
+for nombre in nombre_edad:
+    if int(nombre_edad[nombre] > int(edad_maxima)):
+        edad_maxima = nombre_edad[nombre]
 
+print ("la edad maxima es", edad_maxima, "años y es ", nombre)
+
+# DICCIONARIOS
+
+#Ej. 10: lea una cadena y devuelva un diccionario con la cantidad de apariciones de cada carácter en la cadena.
+# (considerar que las mayúsculas difieren de las minúsculas, por lo que, si el string es "Agua", el carácter "A" tiene 1 aparición y el carácter "a" también tiene 1).
+
+diccionario = {}
+palabra = input("cuantos caracteres tiene: ")
+for lista in palabra:
+    diccionario[lista] = 0
+for listas in palabra:
+    diccionario[listas] =diccionario[listas] + 1
+print (diccionario)
+
+#Ej 12:
+
+dic2= {}
+print(int(input("Cantidad de alumnos para cargar: ")))
+while True:
+    print("coloque * para finalizar")
+    nombre_appelido= input("Nommbre y apellido del alumno: ")
+    if nombre_appelido != "*":
+        while True:
+            print("Escriba -1 para pasar al siguiente alumno: ")
+            nota= int(input("Notas: "))
+            if nota >= 0:
+                if nombre_appelido not in dic:
+                    dic2[nombre_appelido]=[nota]
+                else:
+                    dic2[nombre_appelido].append(nota)
+            else:
+                break
+    else:
+        break
+final = {}
+for nombre_appelido in dic2:
+    final[nombre_appelido]= (sum(dic2[nombre_appelido])/len(dic[nombre_appelido]))
+print(final)
+ 
+
+#Ej. 13
+def es_multiplo (num1, num2):
+    if num1 / num2 == int(num1/num2) or num2 / num1 == int(num2/num1): 
+        print("son multiplos")
+    else:
+        print("no son multiplos")
+es_multiplo(2,10)
+
+#14
+def tmp_promedio(max, min):
+    print("temperatura promedio",(max+min)/2,"grados")
+
+dias = int(input("cantidad de dias: "))
+contador = 0
+for dia in range(dias):
+    if contador < dias:
+        maxima = int(input("Temp. max: "))
+        minima = int(input("Temp. min: "))
+        tmp_promedio(maxima,minima)
+        contador =+ 1
+print("Espero que te sirva")
