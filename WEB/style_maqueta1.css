@@ -7,21 +7,21 @@ body {
 
 }
 h1{
-    font-size: 130px;
+    font-size: 131px;
 }
 h3{
     font-size:54px;
 }
 .green-section{
-    background-color: aquamarine;
-    width: 500px;
-    height: 500px;
+    background-color: #aef496;
+    width: 74%;
+    height: 618px;
     margin: 13%;
     border: 8px black solid;
 }
 .boton-buscar{
-    height:100px;
-    width:100px;
+    height: 81px;
+    width:190px;
     background-color:#71fd7b;
     border: solid #71fd7b;
     font-size: 26px;
