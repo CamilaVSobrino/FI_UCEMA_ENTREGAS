@@ -1,0 +1,7 @@
+from mumuki import Mumuki
+mumuki = Mumuki("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiJjdnNvYnJpbm8yNEB1Y2VtYS5lZHUuYXIiLCJhdWQiOiIwOEJ2cDliY3pmSWIwUHM2eVo1MlBsMEg3Q3p1a2dsVSIsImV4cCI6MTY2Nzc3ODE1NSwib3JnIjoiZnVuZGFtZW50b3MtaW5mb3JtYXRpY2EtdWNlbWEiLCJtZXRhZGF0YSI6e30sInNiaWQiOjE1MDgyLCJzYnQiOiJleGVyY2lzZSJ9.zbU9YeyOzBoBv9IMF7g1tc5UDD4c6ZxhSHs-dYekf3k", "es")
+mumuki.visit("fundamentos-informatica-ucema", "15082")
+
+#rta
+
+mumuki.test()
